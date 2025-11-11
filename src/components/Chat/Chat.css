@@ -1,0 +1,98 @@
+/* src/components/Chat/Chat.css */
+.chat-area {
+  flex-grow: 1;
+  min-width: 0; 
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Проміжки між блоками */
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: var(--color-bg-component);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  border: 1px solid var(--color-border);
+}
+.chat-header .room-id {
+  background-color: var(--color-bg-main);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-family: monospace;
+  word-break: break-all;
+}
+
+#messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: var(--color-bg-component);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1rem;
+  height: 300px; /* Зберігаємо висоту */
+}
+
+#messages .message-item {
+  margin-bottom: 0.5rem;
+  word-wrap: break-word;
+}
+
+#messages .message-sender {
+  font-weight: bold;
+  color: #a0a0a0; /* Сірий для відправника */
+}
+#messages .message-sender.you {
+  color: var(--color-primary); /* Яскравий для "You" */
+}
+#messages .message-body {
+  margin-left: 0.5rem;
+  color: var(--color-text-primary);
+}
+
+.message-input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.message-input {
+  min-height: 80px; 
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.message-input-area button {
+  background-color: #22a55a; /* Green */
+}
+
+.invite-join-area {
+  display: flex;
+  gap: 1rem;
+}
+
+.invite-join-area > div {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.invite-join-area input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.invite-join-area .invite-button {
+  background-color: #8b5cf6; /* Purple */
+}
+.invite-join-area .join-button {
+  background-color: #eab308; /* Yellow */
+  color: #1a1a1a; /* Темний текст на жовтому */
+}

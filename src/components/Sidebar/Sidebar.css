@@ -1,0 +1,19 @@
+.sidebar {
+  min-width: 250px; /* [cite: 102] */
+  flex-shrink: 0; /* Додано, щоб сайдбар не стискався */
+}
+
+.room-list li {
+  padding: 8px; /* [cite: 110] */
+  transition: background-color 0.2s; /* [cite: 111] */
+  list-style-type: none; 
+}
+
+.room-list li:hover {
+  background-color: #e0e7ff; /* [cite: 115] */
+}
+
+.room-list li.active {
+  background-color: #bfdbfe; /* [cite: 118] */
+  font-weight: 500; /* [cite: 119] */
+}
